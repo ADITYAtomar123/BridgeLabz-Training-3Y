@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1 align="center"><u>Student Registration Form</u></h1>
+    <form>
+    <table border="1" cellspacing="0" width="80%" align="center"
+    height="450" cellpadding="0">
+        <tr align="center">
+            <td colspan="2" height="25" style="background-color:aqua"><b>Registration Form</b></td>
+            
+        </tr>
+        
+        <tr >
+            <td width="30%" valign="top" align="center"><label for="name" >Full Name : </label></td>
+
+           <td align="center"><input type="text" id="name" placeholder="Enter Your Name"></td>
+                
+        </tr>
+        <tr>
+            <td align="center"><label for="email">Email : </label> </td>
+            <td align="center"><input type="email" id="email" placeholder="example@gmail.com"></td>
+        </tr>
+        <tr>
+            <td align="center"><label for="dob">Date of Birth : </label></td>
+            <td align="center"><input type="date" id="dob"></td>
+        </tr>
+    
+        <tr>
+            <td align="center"><label>Gender : </label></td>
+            <td align="center">Male<input type="radio"  name="gender">Female<input type="radio"  name="gender">Other<input type="radio"  name="gender"></td>
+            
+        </tr>
+        <tr>
+            <td align="center"><label>Skills : </label></td>
+            <td align="center">HTML<input type="checkbox">CSS<input type="checkbox">JS<input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td align="center">Course : </td>
+            <td align="center">
+                <select>
+                    <option>None</option>
+                    <option>BTECH</option>
+                    <option>BCA</option>
+                    <option>B.COM</option>
+                    <option>BSC</option>
+                    <option>MBA</option>
+                    <option>MCA</option>
+                    <option>M.TECH</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><label for="add">Address : </label></td>
+            <td align="center"><textarea name="address" rows="4" cols="30" id="add"></textarea></td>
+        </tr>
+        <tr>
+            <td align="center">Upload Resume : </td>
+            <td align="center"><input type="file"></td>
+        </tr>
+        
+
+        <tr>
+            
+            <td align ="center" colspan="2"><button type="submit">Register</button>
+            <button type="reset">Reset</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
