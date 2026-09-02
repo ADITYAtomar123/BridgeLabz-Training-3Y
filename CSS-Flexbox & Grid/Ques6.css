@@ -1,0 +1,126 @@
+.container {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+
+    gap: 20px;
+
+    padding: 20px;
+
+    background-color: antiquewhite;
+}
+
+
+/* Header */
+
+header {
+    grid-area: header;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: lightcoral;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Sidebar */
+
+aside {
+    grid-area: sidebar;
+
+    padding: 20px;
+
+    background-color: lightblue;
+}
+
+aside h2 {
+    margin-bottom: 15px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 12px;
+}
+
+
+/* Main */
+
+main {
+    grid-area: main;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    padding: 10px;
+}
+
+.post {
+    padding: 25px;
+
+    background-color: white;
+
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.post h2 {
+    margin-bottom: 15px;
+}
+
+.post p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+button {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    grid-area: footer;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: lightgreen;
+}
+
+

@@ -1,0 +1,47 @@
+.container{
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    gap:20px;
+}
+.box{
+    height:250px;
+    width:250px;
+    background-color: lightcoral;
+    border:2px solid red;
+    border-radius: 20px;
+    text-align: center;
+    transition: 1s ease;
+}
+.box2{
+    height:300px;
+    width:250px;
+    background-color: aquamarine;
+    border:3px solid blueviolet;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease;
+}
+.box:hover{
+    transform: translateY(-10px);
+}
+.box2:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+@keyframes
+ fadeIn{
+     from {
+        opacity: 0;
+        transform: translateY(30px);
+     } 
+     to {
+         opacity: 1;
+          transform: translateY(0);
+        
+    }
+} 

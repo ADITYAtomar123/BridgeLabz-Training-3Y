@@ -1,0 +1,19 @@
+.container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    row-gap: 50px;
+}
+.cards{
+    width:250px;
+    height:250px;
+    background-color: coral;
+    border:5px solid red;
+    border-radius: 20px;
+    text-align: center;
+    transition:0.3s ease;
+   
+}
+.cards:hover{
+    transform: scale(1.05);
+    
+}
