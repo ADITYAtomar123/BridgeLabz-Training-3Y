@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+    <link rel="stylesheet" href="Ques8.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Box Model</h1>
+        <p class="intro">
+            The CSS box model describes how every HTML element is
+            made up of content, padding, border, and margin.
+        </p>
+        <!-- Box Model Demonstration -->
+        <div class="demo-area">
+            <div class="margin-layer">
+                <div class="border-layer">
+                    <div class="padding-layer">
+                        <div class="content-layer">
+                            <h2>Content</h2>
+                            <p>
+                                This is the content area of the box.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Descriptions -->
+        <div class="description">
+            <div>
+                <h3>Content</h3>
+                <p>
+                    The content is the actual text or information
+                    inside an element.
+                </p>
+            </div>
+            <div>
+                <h3>Padding</h3>
+                <p>
+                    Padding is the space between the content and
+                    the border.
+                </p>
+            </div>
+            <div>
+                <h3>Border</h3>
+                <p>
+                    Border surrounds the padding and content area.
+                </p>
+            </div>
+            <div>
+                <h3>Margin</h3>
+                <p>
+                    Margin is the space outside the border that
+                    separates elements.
+                </p>
+            </div>
+
+        </div>
+
+        <h2 class="box-title">Box-Sizing Comparison</h2>
+        <div class="comparison">
+            <div class="box default-box">
+                <h3>Default</h3>
+                <p>box-sizing: content-box</p>
+            </div>
+            <div class="box border-box">
+                <h3>Border Box</h3>
+                <p>box-sizing: border-box</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

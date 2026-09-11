@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: gainsboro;
+    color: darkslategray;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: midnightblue;
+    text-align: center;
+}
+
+
+
+input[type="text"] {
+    border: 2px solid steelblue;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+a[href^="https"] {
+    color: seagreen;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: honeydew;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+a[href^="https"]:hover {
+    background-color: lightgreen;
+}
+
+
+
+
+.list-section li:hover {
+    background-color: lightyellow;
+    color: darkorange;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.list-section li:nth-child(even) {
+    background-color: lavender;
+    color: indigo;
+}
+input:focus {
+    outline: none;
+    border-color: crimson;
+    background-color: mistyrose;
+    box-shadow: 0 0 8px pink;
+}
+
+.list-section h2::before {
+    content: "👉 ";
+    color: darkcyan;
+}
+
+.attribute-section h2::after {
+    content: " ✔️";
+    color: forestgreen;
+}
+
+
+.parent-box > p {
+    background-color: lightblue;
+    padding: 10px;
+    border-left: 5px solid dodgerblue;
+    font-weight: bold;
+}
+
+.parent-box p {
+    color: navy;
+}
+
+.nested-box p {
+    background-color: seashell;
+    border-left: 5px solid tomato;
+    padding: 8px;
+}
+
+h3 + p {
+    background-color: lightgoldenrodyellow;
+    border-bottom: 2px dashed goldenrod;
+    padding: 5px;
+    font-weight: bold;
+}
+
+h3 ~ p {
+    color: maroon;
+    font-style: italic;
+}

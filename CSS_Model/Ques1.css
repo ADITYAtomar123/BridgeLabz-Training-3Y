@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+
+    box-sizing: border-box;
+
+    transition: 0.5s ease;
+}
+
+.box1 {
+    border: 3px solid red;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.box2 {
+    border: 3px dashed blue;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.box3 {
+    border: 3px double green;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+.box4 {
+    border: 3px groove palevioletred;
+    border-radius: 50px;
+    padding: 40px;
+}
+
+.box:hover {
+    border-color: black;
+}

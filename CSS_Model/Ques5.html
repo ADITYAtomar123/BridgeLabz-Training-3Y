@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors Demo</title>
+    <link rel="stylesheet" href="./Ques5.css">
+</head>
+<body>
+
+    <h1>Advanced CSS Selectors Demonstration</h1>
+
+    <section class="attribute-section">
+        <h2>1. Attribute Selectors</h2>
+        <p>Text input (targeted by [type="text"]):</p>
+        <input type="text" placeholder="Type something here...">
+        
+        <p>Secure Link (targeted by [href^="https"]):</p>
+        <a href="https://www.example.com">Secure Website Link</a>
+        <br><br>
+        <a href="http://www.unsecure.com">Unsecure Website Link (No style applied)</a>
+    </section>
+
+    <section class="list-section">
+        <h2>2. Pseudo-classes & Pseudo-elements</h2>
+        <ul>
+            <li>First Item (Hover me!)</li>
+            <li>Second Item (nth-child(even))</li>
+            <li>Third Item (Hover me!)</li>
+            <li>Fourth Item (nth-child(even))</li>
+        </ul>
+        
+        <p>Focus demonstration:</p>
+        <input type="text" placeholder="Click me to see :focus">
+    </section>
+
+    <section class="combinator-section">
+        <h2>3. Combinators</h2>
+        
+        <div class="parent-box">
+            <p>I am a direct child paragraph (styled by >).</p>
+            <div class="nested-box">
+                <p>I am a descendant paragraph inside a nested div (styled by descendant space).</p>
+            </div>
+        </div>
+        <h3>Heading for Sibling Demo</h3>
+        <p>I am the adjacent sibling (styled by +).</p>
+        <p>I am a general sibling (styled by ~).</p>
+        <p>I am also a general sibling (styled by ~).</p>
+    </section>
+
+</body>
+</html>
