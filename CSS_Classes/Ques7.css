@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, white,wheat);
+}
+
+
+.card {
+    width: 500px;
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+
+.search-box {
+    width: 100%;
+
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+
+    border: 1px solid white;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: blue;
+    box-shadow: 0 0 5px rgba(99, 102, 241, 0.4);
+}
+
+
+button {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Search button */
+.search-box button {
+    background-color:blue;
+    color: white;
+}
+
+
+/* Buttons section */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Primary button */
+.primary {
+    background-color:blue;
+    color: white;
+}
+
+/* Secondary button */
+.secondary {
+    background-color:whitesmoke;
+    color: black;
+}
+
+.danger {
+    background-color: red;
+    color: white;
+}
+
+
+
+.dropdown {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dropdown select {
+    padding: 12px;
+
+    border: 1px solid white;
+    border-radius: 8px;
+
+    background-color: white;
+
+    outline: none;
+}
+
+.dropdown select:focus {
+    border-color: blue;
+    box-shadow: 0 0 5px rgba(99, 102, 241, 0.4);
+}

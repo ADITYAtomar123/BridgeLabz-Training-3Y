@@ -1,0 +1,47 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: coral;
+}
+
+.tooltip {
+    position: relative;
+    text-align: center;
+}
+
+.tooltip-text {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 160px;
+    padding: 10px;
+
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    pointer-events: none;
+}
+
+.tooltip:hover .tooltip-text {
+    opacity: 1;
+}
