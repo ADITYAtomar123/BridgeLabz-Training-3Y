@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.comparison {
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image-box {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-box img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Filter applied to right image */
+.filtered {
+    filter: brightness(60%);
+    transition: filter 0.5s ease;
+}
+
+/* Remove filter on hover */
+.filtered:hover {
+    filter: brightness(100%);
+}
+
+.image-box h2 {
+    margin: 15px 0 5px;
+}
+
+.image-box p {
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+
+    .comparison {
+        flex-direction: column;
+    }
+
+    .image-box img {
+        height: auto;
+    }
+}

@@ -1,0 +1,47 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Main Section */
+.content {
+    text-align: center;
+    padding: 60px 20px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .content {
+        padding: 40px 15px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        margin-bottom: 18px;
+    }
+
+    p {
+        line-height: 1.8;
+    }
+}
+
