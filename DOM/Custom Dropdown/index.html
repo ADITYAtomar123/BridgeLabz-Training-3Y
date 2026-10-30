@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Dropdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #f5f7fb;
+            color: #222
+        }
+
+        input,
+        textarea,
+        button {
+            padding: 9px;
+            margin: 6px;
+            border: 1px solid #bbb;
+            border-radius: 5px
+        }
+
+        button {
+            cursor: pointer
+        }
+
+        li {
+            margin: 10px 0
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px
+        }
+
+        .gallery img {
+            cursor: pointer
+        }
+
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: #000b;
+            display: grid;
+            place-items: center
+        }
+
+        .modal[hidden] {
+            display: none
+        }
+
+        .content {
+            background: white;
+            padding: 20px
+        }
+
+        .content img {
+            display: block;
+            max-width: 80vw;
+            max-height: 70vh
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 12px
+        }
+
+        td,
+        th {
+            border: 1px solid #aaa;
+            padding: 8px
+        }
+
+        #area {
+            width: 400px;
+            height: 400px;
+            background: #e5eaf5;
+            border: 2px solid #555;
+            position: relative
+        }
+
+        .dot {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: red;
+            transform: translate(-50%, -50%)
+        }
+
+        small {
+            display: block;
+            color: red
+        }
+
+        body[data-theme=dark] {
+            background: #222;
+            color: #fff
+        }
+
+        body[data-theme=dark] button,
+        body[data-theme=dark] input {
+            background: #444;
+            color: white
+        }
+
+        body[data-theme=blue] {
+            background: #dceeff;
+            color: #073b70
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Custom Dropdown</h1><button id="toggle">Choose option ▾</button>
+    <ul id="menu" hidden>
+        <li data-value="Option 1">Option 1</li>
+        <li data-value="Option 2">Option 2</li>
+        <li data-value="Option 3">Option 3</li>
+    </ul>
+    <p id="selected">Selected: none</p>
+    <script src="script.js"></script>
+</body>
+
+</html>

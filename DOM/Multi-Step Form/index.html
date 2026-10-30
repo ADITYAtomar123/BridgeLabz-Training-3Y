@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multi-Step Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #f5f7fb;
+            color: #222
+        }
+
+        input,
+        textarea,
+        button {
+            padding: 9px;
+            margin: 6px;
+            border: 1px solid #bbb;
+            border-radius: 5px
+        }
+
+        button {
+            cursor: pointer
+        }
+
+        li {
+            margin: 10px 0
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px
+        }
+
+        .gallery img {
+            cursor: pointer
+        }
+
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: #000b;
+            display: grid;
+            place-items: center
+        }
+
+        .modal[hidden] {
+            display: none
+        }
+
+        .content {
+            background: white;
+            padding: 20px
+        }
+
+        .content img {
+            display: block;
+            max-width: 80vw;
+            max-height: 70vh
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 12px
+        }
+
+        td,
+        th {
+            border: 1px solid #aaa;
+            padding: 8px
+        }
+
+        #area {
+            width: 400px;
+            height: 400px;
+            background: #e5eaf5;
+            border: 2px solid #555;
+            position: relative
+        }
+
+        .dot {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: red;
+            transform: translate(-50%, -50%)
+        }
+
+        small {
+            display: block;
+            color: red
+        }
+
+        body[data-theme=dark] {
+            background: #222;
+            color: #fff
+        }
+
+        body[data-theme=dark] button,
+        body[data-theme=dark] input {
+            background: #444;
+            color: white
+        }
+
+        body[data-theme=blue] {
+            background: #dceeff;
+            color: #073b70
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Multi-Step Form</h1>
+    <section id="step1">
+        <h2>Step 1</h2><input id="name" placeholder="Name"><input id="email" type="email" placeholder="Email"><button
+            id="next1">Next</button>
+    </section>
+    <section id="step2" hidden>
+        <h2>Step 2</h2><input id="password" type="password" placeholder="Password"><button
+            id="back">Back</button><button id="next2">Next</button>
+    </section>
+    <section id="step3" hidden>
+        <h2>Summary</h2>
+        <p id="summary"></p><button id="back2">Back</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
