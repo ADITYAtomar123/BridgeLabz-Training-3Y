@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+</style>
+<body>
+    <h1>Learning input Value</h1>
+
+    <input type="text" id="name" value="">
+    <button id="add">Add</button>
+
+     <ul id="head">
+     </ul>
+</body>
+<script>
+
+
+    let name=document.querySelector("#name")
+    let display=document.querySelector("#head")
+    let btn=document.querySelector("#add")
+
+    btn.addEventListener("click",()=>{
+        display.innerHTML +=`<li>${name.value}</li>`;
+    })
+
+</script>
+</html>

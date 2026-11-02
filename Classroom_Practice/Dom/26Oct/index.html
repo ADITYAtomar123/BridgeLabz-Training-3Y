@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        .active{
+            visibility: visible;
+        }
+        .non-active{
+            visibility: hidden;
+        }
+
+    </style>
+<body>
+    <h1 id="head">0</h1>
+    <button id="btn1">Increment</button>
+    <button id="btn2">Decrement</button>
+    <button id="toggle">Toggle</button>
+</body>
+    <script>
+        // increment,decrement value by clicking button
+
+        const hEl=document.querySelector("#head");
+        const bt1=document.querySelector("#btn1");
+        const bt2=document.querySelector("#btn2");
+        const tog=document.querySelector("#toggle");
+        const headingEl=document.querySelector("#head")
+
+        let count=0;
+        bt1.addEventListener("click",()=>{
+            count++;
+            hEl.textContent=count;
+        })
+        bt2.addEventListener("click",()=>{
+            count--;
+            hEl.textContent=count;
+        })
+
+        tog.addEventListener("click",()=>{
+            headingEl.classList.toggle("non-active");
+        })
+
+
+    </script>
+</html>
